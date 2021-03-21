@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Acer</title>
+		<link rel="stylesheet" href="acer.css">
+	</head>
+<body>
+    <div>
+    <header><h1>Acer</h1> </header>
+    <ul>
+  <li><a class="active" href="acer.html">Home</a> </li>
+ <li> <a href="geometry.html">Geometry</a> </li>
+ <li> <a href="algebra.html">Algebra</a> </li>
+  <li> <a href="calculus.html">Calculus</a></li>
+</ul>
+    <main>
+      <div>
+      <h2 id="description"> We made this website to assist you on your journey of learning math! If you are struggling or here simply for practice, we got the <em>PERFECT</em> materials to aid you. Ranging from Geometry, Algebra and Calculus, we are here for all of your needs. After watching a few videos, you will surely become a mathmatician.</h2>
+      </div>
+      <p><strong>Some essential equations! </strong></p>
+  <div class="container">
+
+<div class="images fade">
+  <img src="https://i.pinimg.com/originals/e8/a7/aa/e8a7aaa6916811fe7fca05879378eb54.gif" style="width:100%">
+</div>
+
+<div class="images fade">
+  <img src="https://i.pinimg.com/originals/63/52/45/63524587c326319b5db8605b54b9733e.png" style="width:100%">
+</div>
+
+<div class="images fade">
+  <img src="https://www.onlinemathlearning.com/image-files/quadratic-formula.png" style="width:100%">
+</div>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+</div>
+    <script>
+var slideIndex = 0;
+slideShow();
+
+function slideShow() {
+  var i;
+  var slides = document.getElementsByClassName("images");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(slideShow, 10000);
+}
+</script>
+    </main>
+
+    </div>
+    </body>
